@@ -19,7 +19,7 @@ import kotlinx.android.synthetic.main.fragment_update.view.*
 import kotlinx.android.synthetic.main.fragment_update.view.editText_fragment_update_first_name
 
 
-class UpdateFragment : Fragment() {
+class UpdateUserFragment : Fragment() {
 
     private val args by navArgs<UpdateFragmentArgs>()
     private lateinit var  mUserViewModel: UserViewModel

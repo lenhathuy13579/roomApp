@@ -17,7 +17,7 @@ import kotlinx.android.synthetic.main.fragment_add.*
 import kotlinx.android.synthetic.main.fragment_add.view.*
 
 
-class AddFragment : Fragment() {
+class AddUserFragment : Fragment() {
 
     private lateinit var mUserViewModel: UserViewModel
 

@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.example.roomapp.fragment.add.AddFragment"
+        android:name="com.example.roomapp.fragment.add.AddUserFragment"
         android:label="fragment_add"
         tools:layout="@layout/fragment_add" >
         <action
@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/updateFragment"
-        android:name="com.example.roomapp.fragment.update.UpdateFragment"
+        android:name="com.example.roomapp.fragment.update.UpdateUserFragment"
         android:label="fragment_update"
         tools:layout="@layout/fragment_update" >
         <action
