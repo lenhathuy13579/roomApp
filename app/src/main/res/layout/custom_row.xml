@@ -8,7 +8,7 @@
     android:id="@+id/rowLayout">
 
     <TextView
-        android:id="@+id/id_txt"
+        android:id="@+id/textView_custom_row_id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -20,7 +20,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/firstName_txt"
+        android:id="@+id/textView_custom_row_firstName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -28,11 +28,11 @@
         android:layout_marginTop="32dp"
         android:text="@string/first_name"
         android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/id_txt"
+        app:layout_constraintStart_toEndOf="@+id/textView_custom_row_id"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/lastName_txt"
+        android:id="@+id/textView_custom_row_lastName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -40,11 +40,11 @@
         android:layout_marginTop="32dp"
         android:text="@string/last_name"
         android:textSize="30sp"
-        app:layout_constraintStart_toEndOf="@+id/firstName_txt"
+        app:layout_constraintStart_toEndOf="@+id/textView_custom_row_firstName"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/age_txt"
+        android:id="@+id/textView_custom_row_age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"

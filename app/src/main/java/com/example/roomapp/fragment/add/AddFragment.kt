@@ -30,7 +30,7 @@ class AddFragment : Fragment() {
 
         mUserViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
 
-        view.button_add.setOnClickListener {
+        view.button_fragment_add_add.setOnClickListener {
             insertDataToDatabase()
         }
 
@@ -38,9 +38,9 @@ class AddFragment : Fragment() {
     }
 
     private fun insertDataToDatabase() {
-        val firstName = editText_first_name.text.toString()
-        val lastName = editText_last_name.text.toString()
-        val age = editText_age.text
+        val firstName = editText_fragment_add_first_name.text.toString()
+        val lastName = editText_fragment_add_last_name.text.toString()
+        val age = editText_fragment_add_age.text
 
         if (inputCheck(firstName,lastName,age))
         {

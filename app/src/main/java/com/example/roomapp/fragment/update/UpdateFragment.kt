@@ -7,7 +7,6 @@ import android.text.TextUtils
 import android.view.*
 import androidx.fragment.app.Fragment
 import android.widget.Toast
-import androidx.core.graphics.createBitmap
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
@@ -17,7 +16,7 @@ import com.example.roomapp.fragment.viewmodel.UserViewModel
 import com.example.roomapp.model.User
 import kotlinx.android.synthetic.main.fragment_update.*
 import kotlinx.android.synthetic.main.fragment_update.view.*
-import kotlinx.android.synthetic.main.fragment_update.view.update_first_name
+import kotlinx.android.synthetic.main.fragment_update.view.editText_fragment_update_first_name
 
 
 class UpdateFragment : Fragment() {
@@ -34,9 +33,9 @@ class UpdateFragment : Fragment() {
 
         mUserViewModel = ViewModelProvider(this).get(UserViewModel::class.java)
 
-        view.update_first_name.setText(args.currentUser.firstName)
-        view.update_last_name.setText(args.currentUser.lastName)
-        view.update_age.setText(args.currentUser.age.toString())
+        view.editText_fragment_update_first_name.setText(args.currentUser.firstName)
+        view.editText_fragment_update_last_name.setText(args.currentUser.lastName)
+        view.editText_fragment_update_age.setText(args.currentUser.age.toString())
 
         view.button_update.setOnClickListener {
             updateItem()
@@ -48,11 +47,11 @@ class UpdateFragment : Fragment() {
     }
 
     private fun updateItem() {
-        val firstName =update_first_name.text.toString()
-        val lastName = update_last_name.text.toString()
-        val age = Integer.parseInt(update_age.text.toString())
+        val firstName =editText_fragment_update_first_name.text.toString()
+        val lastName = editText_fragment_update_last_name.text.toString()
+        val age = Integer.parseInt(editText_fragment_update_age.text.toString())
 
-        if (inputCheck(firstName,lastName,update_age.text))
+        if (inputCheck(firstName,lastName,editText_fragment_update_age.text))
         {
             val updateUser = User(args.currentUser.id, firstName, lastName, age)
             mUserViewModel.updateUser(updateUser)
