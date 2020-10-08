@@ -16,6 +16,7 @@ abstract class UserDatabase: RoomDatabase() {
 
         fun getDatabase(context: Context): UserDatabase{
             val tempInstance = INSTANCE
+            val name = "user_database"
             if (tempInstance != null)
             {
                 return tempInstance
@@ -24,7 +25,7 @@ abstract class UserDatabase: RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     UserDatabase::class.java,
-                    "user_database"
+                    name
                 ).build()
                 INSTANCE = instance
                 return instance
